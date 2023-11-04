@@ -10,10 +10,4 @@ This game will initially be played on the console as per the instructions in the
 
 
 
-// Create a function called getComputerChoice that will randomly return either `Rock`, `Paper`, or `Scissors`
-// Create a function that gets the player choice, call it playerSelection
-
-// Write a function that plays a single round of Rock Paper Scissors. The function should take 2 parameters, playerSelection and computerSelection and then return a string that declares the winner of the round like: `You Lose! Paper beats Rock!` **Make your  function's playerSelection parameter case-sensitive(so users can input rock, ROCK, Rock or any other variations)
-
-
 
