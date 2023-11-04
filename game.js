@@ -17,21 +17,20 @@ function getComputerChoice(){
 
 }
 
-const computerSelection = getComputerChoice();
+const computerSelection = getComputerChoice(); //store the computer choice to computerSelection
 
-function playerSelection(){
+let playerSelection = prompt(`Please choose between rock, paper, and scissors: `); //store player choice to playerSelection
+    playerSelection = playerSelection.toLowerCase();
+    //make the choice of player lowercase
 
-    let playerChoice = prompt(`Please choose between Rock,Paper, or Scissors; ` , ''); // gets input from player
+console.log(playerSelection);
 
-    if(playerChoice===' ' || playerChoice===null ){
-        alert(`Please enter a valid choice!`); //if player enters nothing this will show
-    }else{
-        playerChoice = playerChoice.toLowerCase(); //if player enters a valid response it converts the response to lowercase
-    }
-       
-    return playerChoice;
-}
-
-
+//Create a function for 1 round of the game
+// function playRound(playerSelection,computerSelection){
+//     let winner;
+//     if (playerSelection===`rock` && computerSelection===`paper`){
+//         return winner=1;
+//     }else if (playerSelection===)
+// }
 
 
