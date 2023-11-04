@@ -11,26 +11,42 @@ function getComputerChoice(){
             return `paper`;
             break;
         default:
-            return `scissors`;
-            
+            return `scissors`;            
     }
-
 }
+
+
+//Create a function for 1 round of the game
+function playRound(playerSelection,computerSelection){
+    //create conditions for winning/losing
+    if ((playerSelection===`rock` && computerSelection===`scissors`) || 
+    (playerSelection===`scissors` && computerSelection===`paper`) || 
+    (playerSelection===`paper` && computerSelection===`rock`)){
+        console.log(`You win! You chose "${playerSelection}" and the computer chose "${computerSelection}". ${playerSelection.toUpperCase()} beats ${computerSelection.toUpperCase()}.`); //display player win
+        return winner = `player`;
+    }else if ((playerSelection===`rock` && computerSelection===`rock`) || 
+    (playerSelection===`paper` && computerSelection===`paper`) || 
+    (playerSelection===`scissors` && computerSelection===`scissors`) ){
+        console.log(`It's a draw. You chose "${playerSelection}" and the computer chose "${computerSelection}"`);//display draw
+        return winner = `draw`;
+    }else{
+        console.log(`You lose! The computer chose "${computerSelection}" and you chose "${playerSelection}". ${computerSelection.toUpperCase()} beats ${playerSelection.toUpperCase()}.`);//display computer win
+        return winner = `computer`;
+    }
+}
+
+
 
 const computerSelection = getComputerChoice(); //store the computer choice to computerSelection
 
 let playerSelection = prompt(`Please choose between rock, paper, and scissors: `); //store player choice to playerSelection
-    playerSelection = playerSelection.toLowerCase();
-    //make the choice of player lowercase
-
-console.log(playerSelection);
-
-//Create a function for 1 round of the game
-// function playRound(playerSelection,computerSelection){
-//     let winner;
-//     if (playerSelection===`rock` && computerSelection===`paper`){
-//         return winner=1;
-//     }else if (playerSelection===)
-// }
+    playerSelection = playerSelection.toLowerCase(); //make the choice of player lowercase
 
 
+//for score storage
+let playerScore; 
+let computerScore;
+let winner = '';
+
+playRound(playerSelection,computerSelection);
+// console.log(`The winner is ${winner}.`);

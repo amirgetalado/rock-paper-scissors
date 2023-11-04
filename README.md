@@ -17,17 +17,3 @@ This game will initially be played on the console as per the instructions in the
 
 
 
-
-//Create a function for player's choice
-function playerSelection(){
-
-    let playerChoice = prompt(`Please choose between Rock,Paper, or Scissors; ` , ''); // gets input from player
-
-    if(playerChoice===' ' || playerChoice===null ){
-        alert(`Please enter a valid choice!`); //if player enters nothing this will show
-    }else{
-        playerChoice = playerChoice.toLowerCase(); //if player enters a valid response it converts the response to lowercase
-    }
-       
-    return playerChoice;
-}
