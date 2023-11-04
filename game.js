@@ -44,18 +44,18 @@ function playRound(){
  function game(){
 
     //I use while loop because I set the max score to 5. First one reaches 5 will win
-    // while(playerScore<5 && computerScore <5){
-    //     playRound();
-    //     console.log(`Player Score: ${playerScore}`);
-    //     console.log(`Computer Score: ${computerScore}`);
-    // }
-
-    //The Odin Project's instruction is to play 5 rounds, this for loop is for looping until 5 rounds
-    for (let i =0; i<5; i++){
+    while(playerScore<5 && computerScore <5){
         playRound();
         console.log(`Player Score: ${playerScore}`);
         console.log(`Computer Score: ${computerScore}`);
     }
+
+    //The Odin Project's instruction is to play 5 rounds, this for loop is for looping until 5 rounds
+    // for (let i =0; i<5; i++){
+    //     playRound();
+    //     console.log(`Player Score: ${playerScore}`);
+    //     console.log(`Computer Score: ${computerScore}`);
+    // }
 
     if (playerScore > computerScore){
         console.log(`------------------------------`);
