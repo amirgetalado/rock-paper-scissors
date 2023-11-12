@@ -123,7 +123,7 @@ scissorsBtn.addEventListener('click', function(){
 let btnUnclickable = function(){
     buttons.forEach(function(button){
         button.disabled = true;
-        button.style.opacity = '0.7';
+        button.style.opacity = '1';
     });
 }
 

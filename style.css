@@ -18,10 +18,21 @@ body{
     justify-content: space-evenly;
 }
 .cards{
-    border: 1px solid #faef19;
+    border: 2px solid #faef19;
     border-radius: 7px;
-    padding: 20px;
-  
+    padding: 40px;
+    box-shadow: 10px 10px 8px #e8dc71;
+    background: #030302;
+}
+
+.rps-card{
+    display:flex;
+    gap:20px;
+}
+
+.icon-cards{
+    padding:10px;
+    color: black;
 }
 
 .score{
@@ -30,9 +41,12 @@ body{
 }
 
 .result-container{
-    margin-top:20px;
+    margin-top:30px;
     text-align:center;
+}
 
+.result{
+    padding:20px;
 }
 
 .footer{
