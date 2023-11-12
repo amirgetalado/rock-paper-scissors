@@ -1,0 +1,40 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: black;
+    color:#faef19;
+    display:flex;
+    flex-direction:column;
+    min-height: 100vh;
+    text-align: center;
+}
+.header{
+    padding: 5px;
+    border-bottom: 5px solid;
+}
+.card-container{
+    display:flex;
+    gap: 40px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.cards{
+    border: 1px solid #faef19;
+    border-radius: 7px;
+    padding: 20px;
+  
+}
+
+.score{
+    display:flex;
+    justify-content: space-between;
+}
+
+.result-container{
+    margin-top:20px;
+}
+
+.footer{
+    font-size: 10px;
+    margin-top:auto;
+    padding: 7px;
+}
